@@ -47,7 +47,7 @@ Use `NanMakeCallback()`` like this:
 NanMakeCallback(NanGetCurrentContext()->Global(), callback, 0, NULL);
 ```
 
-The first argument specifies what to use as `this` in JavaScript. Here it's just be `global`. The second argument is the function you wish to use as a callback. The third argument is the number of arguments to apply to the function. The fourth argument is an array of `Local<Value>` handles that supply the arguments. In this case, we're not passing any arguments to the callback, so we specify `0` arguments and a `NULL` array.
+The first argument specifies what to use as `this` in JavaScript. Here it's just `global`. The second argument is the function you wish to use as a callback. The third argument is the number of arguments to apply to the function. The fourth argument is an array of `Local<Value>` handles that supply the arguments. In this case, we're not passing any arguments to the callback, so we specify `0` arguments and a `NULL` array.
 
 {cyan}──────────────────────────────────────────────────────────────────────{/cyan}
 
